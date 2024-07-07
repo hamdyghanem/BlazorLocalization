@@ -1,0 +1,14 @@
+﻿@page "/"
+@using Microsoft.Extensions.Localization
+@using BlazorLocalization.Locales;
+@using System.Globalization
+@inject IStringLocalizer<Resources> localizer
+
+<PageTitle>@localizer["Home"]</PageTitle>
+
+@Thread.CurrentThread.CurrentCulture;
+@Thread.CurrentThread.CurrentUICulture;
+
+<h1>@localizer["HomeTitle"]</h1>
+
+@localizer["HomeText"]
